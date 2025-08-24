@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackmatter | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-10 py-6 bg-black">
+    <h1 class="text-2xl font-bold text-white tracking-wider">BLACKMATTER</h1>
+    <div class="space-x-10 text-gray-400 text-sm">
+      <a href="#home" class="hover:text-white">Home</a>
+      <a href="#portfolio" class="hover:text-white">Portfolio</a>
+      <a href="#order" class="hover:text-white">Order</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen flex flex-col justify-center px-16">
+    <img src="images/hero.jpg" alt="Blackmatter Hero" class="absolute inset-0 w-full h-full object-cover opacity-20">
+    <div class="relative z-10 max-w-xl">
+      <h2 class="text-6xl font-extrabold text-white leading-tight mb-6">Work<br> Anywhere</h2>
+      <p class="text-gray-400 mb-8">
+        Blackmatter — ruang lahirnya logo, editing, dan seni visual untuk generasi modern.  
+        Profil kreatif, karya orisinal, dan jasa desain tersedia di sini.
+      </p>
+      <a href="#order" class="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-300 transition">
+        Buat Pesanan
+      </a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 px-10 bg-gray-900">
+    <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-black p-4 rounded-xl shadow-lg">
+        <img src="images/sample1.jpg" alt="Logo Design" class="rounded-lg">
+        <p class="mt-2 text-gray-300">Logo Custom</p>
+      </div>
+      <div class="bg-black p-4 rounded-xl shadow-lg">
+        <img src="images/sample2.jpg" alt="Visual Editing" class="rounded-lg">
+        <p class="mt-2 text-gray-300">Visual Editing</p>
+      </div>
+      <div class="bg-black p-4 rounded-xl shadow-lg">
+        <img src="images/sample3.jpg" alt="Concept Art" class="rounded-lg">
+        <p class="mt-2 text-gray-300">Concept Art</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section id="order" class="py-20 px-10 bg-black">
+    <h2 class="text-3xl font-bold mb-10 text-center">Buat Pesanan</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="max-w-lg mx-auto bg-gray-900 p-8 rounded-2xl shadow-lg">
+      <input type="text" name="name" placeholder="Nama" class="w-full p-3 mb-4 rounded-lg bg-black border border-gray-700 text-white">
+      <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 rounded-lg bg-black border border-gray-700 text-white">
+      <textarea name="message" rows="4" placeholder="Deskripsikan pesanan (logo/editing)" class="w-full p-3 mb-4 rounded-lg bg-black border border-gray-700 text-white"></textarea>
+      <button type="submit" class="w-full bg-white text-black font-bold py-3 rounded-lg hover:bg-gray-300 transition">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6">Hubungi Saya</h2>
+    <p class="text-gray-400 mb-4">Temukan saya di platform berikut:</p>
+    <div class="space-x-6">
+      <a href="https://instagram.com/blackmatter" target="_blank" class="hover:text-white">Instagram</a>
+      <a href="https://tiktok.com/@blackmatter" target="_blank" class="hover:text-white">TikTok</a>
+      <a href="https://behance.net/graffiello_v" target="_blank" class="hover:text-white">Behance</a>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center bg-black border-t border-gray-800">
+    <p class="text-gray-500">© 2025 Blackmatter. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
